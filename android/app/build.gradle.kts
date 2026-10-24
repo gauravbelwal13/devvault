@@ -41,7 +41,6 @@ kotlin {
 }
 
 dependencies {
-    implementation("com.google.mediapipe:tasks-vision-image-generator:latest.release")
 }
 
 flutter {

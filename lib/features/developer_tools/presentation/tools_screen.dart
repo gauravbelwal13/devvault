@@ -1,10 +1,7 @@
-import 'package:devvault/features/developer_tools/presentation/screens/local_image_generator_screen.dart';
 import 'package:flutter/material.dart';
-
 import '../../../app/theme/app_colors.dart';
 import '../../../app/theme/app_radius.dart';
 import '../../../app/theme/app_spacing.dart';
-
 import 'screens/audio_trimmer_screen.dart';
 import 'screens/image_compression_screen.dart';
 import 'screens/image_converter_screen.dart';
@@ -17,7 +14,7 @@ import 'screens/voice_studio_screen.dart';
 class ToolsScreen extends StatelessWidget {
   const ToolsScreen({super.key});
 
-  static const int _totalTools = 9;
+  static const int _totalTools = 8;
 
   void _openTool(
     BuildContext context,
@@ -93,21 +90,6 @@ class ToolsScreen extends StatelessWidget {
           const SizedBox(
             height: AppSpacing.sm,
           ),
-
-          _AiToolCard(
-  icon: Icons.auto_awesome_rounded,
-  title: 'AI Image Generator',
-  description:
-      'Generate images from text using a local AI model.',
-  accentColor: const Color(0xFF10B981),
-  badge: 'LOCAL',
-  onTap: () {
-    _openTool(
-      context,
-      const LocalImageGeneratorScreen(),
-    );
-  },
-),
 
           const SizedBox(
             height: AppSpacing.xl,
